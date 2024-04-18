@@ -10,6 +10,12 @@ class FirestoreService {
   }
 
   // READ
+  Stream<QuerySnapshot> getNotesStream() {
+    final notesStream =
+        notes.orderBy('timestamp', descending: true).snapshots();
+
+    return notesStream;
+  }
 
   // UPDATE
 
