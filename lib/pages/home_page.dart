@@ -83,6 +83,7 @@ class _HomePageState extends State<HomePage> {
                   String noteText = data['note'];
 
                   return ListTile(
+                    contentPadding: const EdgeInsets.fromLTRB(15, 0, 0, 0),
                     title: Text(noteText),
                     trailing: Row(
                       mainAxisSize: MainAxisSize.min,
