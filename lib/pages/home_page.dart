@@ -89,7 +89,7 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         IconButton(
                           onPressed: () => openNoteBox(docID: docID),
-                          icon: const Icon(Icons.settings),
+                          icon: const Icon(Icons.edit),
                         ),
                         IconButton(
                           onPressed: () => firestoreService.deleteNote(docID),
